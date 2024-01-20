@@ -1,41 +1,21 @@
+import 'package:doc_doc_app/core/theming/spacing.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../../core/theming/assets.dart';
 import '../../../../core/theming/styles.dart';
-
-class DoctorIamgeAndLogo extends StatelessWidget {
-  const DoctorIamgeAndLogo({super.key});
+class ImageAndDescriptionText extends StatelessWidget {
+  const ImageAndDescriptionText({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Stack(
+    return  Column(
       children: [
-        SvgPicture.asset('assets/svgs/docdoc_logo_low_opacity.svg'),
-        Container(
-          foregroundDecoration: BoxDecoration(
-            gradient: LinearGradient(
-                colors: [
-                  Colors.white,
-                  Colors.white.withOpacity(0.0),
-                ],
-              begin: Alignment.bottomCenter,
-              end: Alignment.topCenter,
-              stops: const[0.14,0.4],
-            ),
-              
-            
-          ),
-          child: Image.asset('assets/images/onboarding_doctor.png'),
+        Image.asset(AssetsImages.splashImage),
+        verticalSpacing(30),
+        Text('Let\'s find the "A" with us',textAlign: TextAlign.center,
+          style: TextStyles.font24BlueBold,
         ),
-        Positioned(
-          bottom: 30,
-          left: 0,
-          right: 0,
-          child: Text('Best Doctor\n Appointment App',textAlign: TextAlign.center,
-        style: TextStyles.font32BlueBold,
-        ),
-
-        )
+        verticalSpacing(20)
       ],
     );
   }

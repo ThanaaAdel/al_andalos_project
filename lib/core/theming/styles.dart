@@ -19,7 +19,22 @@ class TextStyles {
   static TextStyle font13BlueSemiBold = TextStyle(
       fontSize: 13.sp,
       fontWeight: FontWeightHelper.semiBold,
-      color: ColorsManager.mainBlue
+      color: ColorsManager.mainColor
+  );
+  static TextStyle font20DarkGraySemiBold = TextStyle(
+      fontSize: 20.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: ColorsManager.darkGray
+  );
+  static TextStyle font15GraySemiBold = TextStyle(
+      fontSize: 15.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: ColorsManager.grey
+  );
+  static TextStyle font25DarkGraySemiBold = TextStyle(
+      fontSize: 25.sp,
+      fontWeight: FontWeightHelper.semiBold,
+      color: ColorsManager.darkGray
   );
   static TextStyle font13DarkBlueRegular = TextStyle(
       fontSize: 13.sp,
@@ -29,16 +44,16 @@ class TextStyles {
   static TextStyle font13DarkBlueMedium = TextStyle(
       fontSize: 13.sp,
       fontWeight: FontWeightHelper.medium,
-      color: ColorsManager.mainBlue
+      color: ColorsManager.mainColor
   );
   static TextStyle font24BlueBold = TextStyle(
       fontSize: 24.sp,
-      fontWeight: FontWeightHelper.bold,      color: ColorsManager.mainBlue
+      fontWeight: FontWeightHelper.bold,      color: ColorsManager.mainColor
   );
   static TextStyle font32BlueBold = TextStyle(
       fontSize: 32.sp,
       fontWeight: FontWeightHelper.bold,
-      color: ColorsManager.mainBlue
+      color: ColorsManager.mainColor
   );
   static TextStyle font14Gray = TextStyle(
       fontSize: 14.sp,
@@ -63,11 +78,11 @@ class TextStyles {
   static TextStyle font16WithSemiBold= TextStyle(
       fontSize: 16.sp,
       fontWeight: FontWeightHelper.semiBold,
-      color: Colors.white
+      color: ColorsManager.darkGray
   );
   static TextStyle font13BlueRegular= TextStyle(
       fontSize: 13.sp,
       fontWeight: FontWeightHelper.regular,
-      color: ColorsManager.mainBlue
+      color: ColorsManager.mainColor
   );
 }

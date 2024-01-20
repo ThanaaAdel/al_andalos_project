@@ -6,7 +6,7 @@
 // tree, read text, and verify that the values of widget properties are correct.
 
 import 'package:doc_doc_app/core/Routing/app_router.dart';
-import 'package:doc_doc_app/doc_doc_app.dart';
+import 'package:doc_doc_app/al_andalos_app.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
@@ -15,7 +15,7 @@ import 'package:doc_doc_app/main.dart';
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget( DocDocApp(appRouter: AppRouter(),));
+    await tester.pumpWidget( AlAndalosApp(appRouter: AppRouter(),));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);

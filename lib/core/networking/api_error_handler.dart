@@ -41,7 +41,7 @@ class ResponseCode {
 
 }
 
-class ResponseMessage {
+class Responsedata {
 
   static const String NO_CONTENT = ApiErrors.noContent;
   static const String BAD_REQUEST = ApiErrors.badRequestError;
@@ -63,56 +63,56 @@ extension DataSourceExtension on DataSource {
     switch (this) {
       case DataSource.NO_CONTENT :
         return ApiErrorModel(
-            code: ResponseCode.NO_CONTENT,
-            message: ResponseMessage.NO_CONTENT);
+            status: ResponseCode.NO_CONTENT,
+            data: Responsedata.NO_CONTENT);
       case DataSource.BAD_REQUEST :
         return ApiErrorModel(
-            code: ResponseCode.BAD_REQUEST,
-            message: ResponseMessage.BAD_REQUEST);
+            status: ResponseCode.BAD_REQUEST,
+            data: Responsedata.BAD_REQUEST);
       case DataSource.FORBIDDEN :
         return ApiErrorModel(
-            code: ResponseCode.FORBIDDEN,
-            message: ResponseMessage.FORBIDDEN);
+            status: ResponseCode.FORBIDDEN,
+            data: Responsedata.FORBIDDEN);
       case DataSource.UNAUTORISED :
         return ApiErrorModel(
-            code: ResponseCode.UNAUTORISED,
-            message: ResponseMessage.UNAUTORISED);
+            status: ResponseCode.UNAUTORISED,
+            data: Responsedata.UNAUTORISED);
       case DataSource.NOT_FOUND :
         return ApiErrorModel(
-            code: ResponseCode.NOT_FOUND,
-            message: ResponseMessage.NOT_FOUND);
+            status: ResponseCode.NOT_FOUND,
+            data: Responsedata.NOT_FOUND);
       case DataSource.CONNECT_TIMEOUT :
         return ApiErrorModel(
-            code: ResponseCode.CONNECT_TIMEOUT,
-            message: ResponseMessage.CONNECT_TIMEOUT);
+            status: ResponseCode.CONNECT_TIMEOUT,
+            data: Responsedata.CONNECT_TIMEOUT);
       case DataSource.CANCEL :
         return ApiErrorModel(
-            code: ResponseCode.CANCEL,
-            message: ResponseMessage.CANCEL);
+            status: ResponseCode.CANCEL,
+            data: Responsedata.CANCEL);
       case DataSource.RECIEVE_TIMEOUT :
         return ApiErrorModel(
-            code: ResponseCode.RECIEVE_TIMEOUT,
-            message: ResponseMessage.RECIEVE_TIMEOUT);
+            status: ResponseCode.RECIEVE_TIMEOUT,
+            data: Responsedata.RECIEVE_TIMEOUT);
       case DataSource.SEND_TIMEOUT :
         return ApiErrorModel(
-            code: ResponseCode.SEND_TIMEOUT,
-            message: ResponseMessage.SEND_TIMEOUT);
+            status: ResponseCode.SEND_TIMEOUT,
+            data: Responsedata.SEND_TIMEOUT);
       case DataSource.CACHE_ERROR :
         return ApiErrorModel(
-            code: ResponseCode.CACHE_ERROR,
-            message: ResponseMessage.CACHE_ERROR);
+            status: ResponseCode.CACHE_ERROR,
+            data: Responsedata.CACHE_ERROR);
       case DataSource.NO_INTERNET_CONNECTION :
         return ApiErrorModel(
-            code: ResponseCode.NO_INTERNET_CONNECTION,
-            message: ResponseMessage.NO_INTERNET_CONNECTION);
+            status: ResponseCode.NO_INTERNET_CONNECTION,
+            data: Responsedata.NO_INTERNET_CONNECTION);
       case DataSource.DEFAULT :
         return ApiErrorModel(
-            code: ResponseCode.DEFAULT,
-            message: ResponseMessage.DEFAULT);
+            status: ResponseCode.DEFAULT,
+            data: Responsedata.DEFAULT);
       case DataSource.INTERNET_SERVER_ERROR : // Add this case
         return ApiErrorModel(
-            code: ResponseCode.INTERNET_SERVER_ERROR,
-            message: ResponseMessage.INTERNET_SERVER_ERROR);
+            status: ResponseCode.INTERNET_SERVER_ERROR,
+            data: Responsedata.INTERNET_SERVER_ERROR);
     }
   }
 }

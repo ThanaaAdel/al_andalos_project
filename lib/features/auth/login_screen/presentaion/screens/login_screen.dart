@@ -1,11 +1,12 @@
+import 'package:doc_doc_app/core/theming/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../../core/shared_widgets/app_elevated_button.dart';
+import '../../../../../core/theming/assets.dart';
 import '../../../../../core/theming/spacing.dart';
 import '../../../../../core/theming/styles.dart';
-import '../../data/models/login_request_body.dart';
 import '../../logic/login_cubit.dart';
 import '../widgets/don`t_have_an_account.dart';
 import '../widgets/email_and_password.dart';
@@ -24,35 +25,21 @@ class _LoginScreenState extends State<LoginScreen> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      backgroundColor: ColorsManager.lightGrey,
       body: SafeArea(
           child: Padding(
         padding: EdgeInsets.symmetric(horizontal: 30.h, vertical: 30.w),
         child: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Text(
-                "Welcome Back",
-                style: TextStyles.font24BlueBold,
-              ),
-              verticalSpacing(10),
-              Text(
-                "We're excited to have you back, can't wait to see what you've been up to since you last logged in.",
-                style: TextStyles.font14GrayRegular,
-              ),
-              verticalSpacing(35),
+             Image.asset(AssetsImages.loginImage),
+              verticalSpacing(30),
               Column(
                 children: [
                   const EmailAndPassword(),
-                  Align(
-                    alignment: AlignmentDirectional.centerEnd,
-                    child: Text(
-                      "Forget Password",
-                      style: TextStyles.font13BlueRegular,
-                    ),
-                  ),
-                  verticalSpacing(50),
+                  verticalSpacing(100),
                   AppTextButton(
                       textStyle: TextStyles.font16WithSemiBold,
                       onPressed: () {
@@ -63,7 +50,6 @@ class _LoginScreenState extends State<LoginScreen> {
                   verticalSpacing(20),
                   const TermAndConditionText(),
                   verticalSpacing(70),
-                  const DonNotHaveAnAccount(),
                   const LoginBlocListener(),
                 ],
               ),
@@ -76,9 +62,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
   void validateThenDoLogin(BuildContext context){
     if(context.read<LoginCubit>().formKey.currentState!.validate()){
-      context.read<LoginCubit>().emitLoginStates(LoginRequestBody(
-          email: context.read<LoginCubit>().emailController.text,
-          password: context.read<LoginCubit>().passwordController.text));
+      context.read<LoginCubit>().emitLoginStates();
       setState(() {
         context.read<LoginCubit>().emailController.clear();
         context.read<LoginCubit>().passwordController.clear();

@@ -1,18 +1,18 @@
 import 'package:json_annotation/json_annotation.dart';
 
-part 'api_response.g.dart';
+part 'api_parent_response_login.g.dart';
 @JsonSerializable()
-class ParentRequestBody {
+class ParentResponseBody {
   Data? data;
   List<String>? message;
   int? status;
 
-  ParentRequestBody({this.data, this.message, this.status});
-  factory ParentRequestBody.fromJson(Map<String, dynamic> json) => _$ParentRequestBodyFromJson(json);
+  ParentResponseBody({this.data, this.message, this.status});
+  factory ParentResponseBody.fromJson(Map<String, dynamic> json) => _$ParentResponseBodyFromJson(json);
 
-  Map<String, dynamic> toJson() => _$ParentRequestBodyToJson(this);
+  Map<String, dynamic> toJson() => _$ParentResponseBodyToJson(this);
 }
-
+@JsonSerializable()
 class Data {
   int? id;
   String? name;
@@ -25,21 +25,29 @@ class Data {
 
   Map<String, dynamic> toJson() => _$DataToJson(this);
 }
-
+@JsonSerializable()
 class Students {
   int? id;
   String? name;
   String? image;
   String? phone;
+  @JsonKey(name: 'positive_point')
   int? positivePoint;
+  @JsonKey(name: 'negative_point')
   int? negativePoint;
+  @JsonKey(name: 'total_point')
   int? totalPoint;
+  @JsonKey(name: 'number_of_violations')
   int? numberOfViolations;
-  Row? row;
-  Row? room;
+  RowInfo? row;
+  RowInfo? room;
+  @JsonKey(name: 'new_notification_count')
   int? newNotificationCount;
+  @JsonKey(name: 'school_rank')
   int? schoolRank;
+  @JsonKey(name: 'row_rank')
   int? rowRank;
+  @JsonKey(name: 'room_rank')
   int? roomRank;
 
   Students(
@@ -62,13 +70,13 @@ class Students {
   Map<String, dynamic> toJson() => _$StudentsToJson(this);
 
 }
-
-class Row {
+@JsonSerializable()
+class RowInfo {
   int? id;
   String? title;
 
-  Row({this.id, this.title});
-  factory ParentRequestBody.fromJson(Map<String, dynamic> json) => _$ParentRequestBodyFromJson(json);
+  RowInfo({this.id, this.title});
+  factory RowInfo.fromJson(Map<String, dynamic> json) => _$RowInfoFromJson(json);
 
-  Map<String, dynamic> toJson() => _$ParentRequestBodyToJson(this);
+  Map<String, dynamic> toJson() => _$RowInfoToJson(this);
 }

@@ -1,7 +1,5 @@
-import 'password_validations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-
 import '../../../../../core/helper/app_regex.dart';
 import '../../../../../core/shared_widgets/app_text_feild.dart';
 import '../../../../../core/theming/spacing.dart';
@@ -17,29 +15,13 @@ class EmailAndPassword extends StatefulWidget {
 class _EmailAndPasswordState extends State<EmailAndPassword> {
   bool isObscureText = true;
 
-  bool hasLowerCase = false;
-  bool hasUpperCase = false;
-  bool hasNumber = false;
-  bool hasSpecialCharacters = false;
-  bool hasMinLength = false;
   late TextEditingController passwordController;
   @override
   void initState() {
     super.initState();
     passwordController = context.read<LoginCubit>().passwordController;
-    setupPasswordControllerListener();
   }
-  void setupPasswordControllerListener(){
- passwordController.addListener(() {
-   setState(() {
-     hasLowerCase = AppRex.hasLowerCase(passwordController.text);
-     hasUpperCase = AppRex.hasUpperCase(passwordController.text);
-     hasNumber = AppRex.hasNumber(passwordController.text);
-     hasMinLength = AppRex.isMinLength(passwordController.text);
-     hasSpecialCharacters = AppRex.hasSpecialCharacter(passwordController.text);
-   });
- });
-  }
+
 
   @override
   void dispose() {
@@ -85,13 +67,7 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
               ),
             ),
             verticalSpacing(24),
-             PasswordValidations(
-               hasLowerCase: hasLowerCase,
-               hasMinLength: hasMinLength,
-               hasNumber: hasNumber,
-               hasSpecialCharacters: hasSpecialCharacters,
-               hasUpperCase: hasUpperCase,
-             ),
+
           ],
         ));
   }

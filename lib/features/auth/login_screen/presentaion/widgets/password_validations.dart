@@ -41,7 +41,7 @@ Widget buildValidationRow(String text, bool hasValidated) {
       decoration:  hasValidated ? TextDecoration.lineThrough : null,
       decorationColor:  Colors.green,
       decorationThickness: 2,
-      color: hasValidated ? ColorsManager.grey : ColorsManager.mainBlue,
+      color: hasValidated ? ColorsManager.grey : ColorsManager.mainColor,
     ),)
   ],);
 }

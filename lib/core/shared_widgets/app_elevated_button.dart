@@ -41,7 +41,7 @@ class AppTextButton extends StatelessWidget {
             Size(buttonWidth ?? double.maxFinite, buttonHeight ?? 50.h),
           ),
           backgroundColor: MaterialStateProperty.all(
-              backgroundColor ?? ColorsManager.mainBlue)),
+              backgroundColor ?? ColorsManager.mainColor)),
       onPressed: onPressed,
       child: Text(
         textButton,
