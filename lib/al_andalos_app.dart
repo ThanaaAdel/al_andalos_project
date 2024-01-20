@@ -1,3 +1,6 @@
+import 'package:doc_doc_app/generated/l10n.dart';
+import 'package:klocalizations_flutter/klocalizations_flutter.dart';
+
 import 'core/Routing/app_router.dart';
 import 'core/Routing/routers.dart';
 import 'core/theming/colors.dart';
@@ -14,6 +17,14 @@ class AlAndalosApp extends StatelessWidget {
       designSize: const Size(375, 812),
       minTextAdapt: true,
       child: MaterialApp(
+        locale: const Locale('en'),
+         localizationsDelegates: const [
+                S.delegate,
+                GlobalMaterialLocalizations.delegate,
+                GlobalWidgetsLocalizations.delegate,
+                GlobalCupertinoLocalizations.delegate,
+            ],
+            supportedLocales: S.delegate.supportedLocales,
         debugShowCheckedModeBanner: false,
         title: 'Al Andalos App',
         theme: ThemeData(

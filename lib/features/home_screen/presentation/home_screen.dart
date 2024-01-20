@@ -2,6 +2,7 @@ import 'package:doc_doc_app/core/theming/assets.dart';
 import 'package:doc_doc_app/core/theming/media_query_helper.dart';
 import 'package:doc_doc_app/core/theming/spacing.dart';
 import 'package:doc_doc_app/core/theming/styles.dart';
+import 'package:doc_doc_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../../../core/theming/colors.dart';
@@ -32,7 +33,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 appbarHome(),
                 verticalSpacing(50),
                 textAndIconImageInHomeScreen(
-                  "Student\`s Name",
+                  S.of(context).students_name,
                   Image.asset(AssetsImages.iconStudentNameHome),
                 ),
                 verticalSpacing(30),
