@@ -22,6 +22,10 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
-        "students_name": MessageLookupByLibrary.simpleMessage("اسماء الابناء")
+        "description_text_in_image_on_boarding_screen":
+            MessageLookupByLibrary.simpleMessage("\'لنجد الحرف \"أ\" معنا\'"),
+        "students_name": MessageLookupByLibrary.simpleMessage("اسماء الابناء"),
+        "text_in_onboarding_screen": MessageLookupByLibrary.simpleMessage(
+            "يرجى تسجيل الدخول لعرض التوصيات الشخصية \\n")
       };
 }

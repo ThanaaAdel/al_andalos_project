@@ -1,6 +1,5 @@
 import 'package:doc_doc_app/generated/l10n.dart';
 import 'package:klocalizations_flutter/klocalizations_flutter.dart';
-
 import 'core/Routing/app_router.dart';
 import 'core/Routing/routers.dart';
 import 'core/theming/colors.dart';

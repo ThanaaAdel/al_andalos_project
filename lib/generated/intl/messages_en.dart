@@ -22,7 +22,12 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "description_text_in_image_on_boarding_screen":
+            MessageLookupByLibrary.simpleMessage(
+                "\'Let\\\'s find the \"A\" with us\'"),
         "students_name":
-            MessageLookupByLibrary.simpleMessage("Student\\`s Name")
+            MessageLookupByLibrary.simpleMessage("The Name of Students"),
+        "text_in_onboarding_screen": MessageLookupByLibrary.simpleMessage(
+            "Please Sign in to view personalized \\n recommendations")
       };
 }

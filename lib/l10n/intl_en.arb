@@ -1,4 +1,6 @@
 {
-   "students_name" : "The Name of Students"
+   "students_name" : "The Name of Students",
+   "description_text_in_image_on_boarding_screen" : "'Let\\'s find the \"A\" with us'",
+   "text_in_onboarding_screen":"Please Sign in to view personalized \\n recommendations"
 
 }

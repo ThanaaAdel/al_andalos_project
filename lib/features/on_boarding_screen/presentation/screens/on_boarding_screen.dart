@@ -4,6 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/theming/colors.dart';
 import '../../../../core/theming/styles.dart';
+import '../../../../generated/l10n.dart';
 import '../widgets/doctor_name_and_logo.dart';
 import '../widgets/get_started_button.dart';
 
@@ -26,7 +27,7 @@ class OnBoardingScreen extends StatelessWidget {
                 child: Column(
                   children: [
                     Text(
-                      'Please Sign in to view personalized \n recommendations',
+                      S.of(context).text_in_onboarding_screen,
                       style: TextStyles.font14Gray,
                       textAlign: TextAlign.center,
                     ),

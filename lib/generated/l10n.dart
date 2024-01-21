@@ -50,11 +50,31 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Student\'s Name`
+  /// `The Name of Students`
   String get students_name {
     return Intl.message(
-      'Student\\`s Name',
+      'The Name of Students',
       name: 'students_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `'Let\'s find the "A" with us'`
+  String get description_text_in_image_on_boarding_screen {
+    return Intl.message(
+      '\'Let\\\'s find the "A" with us\'',
+      name: 'description_text_in_image_on_boarding_screen',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Please Sign in to view personalized \n recommendations`
+  String get text_in_onboarding_screen {
+    return Intl.message(
+      'Please Sign in to view personalized \\n recommendations',
+      name: 'text_in_onboarding_screen',
       desc: '',
       args: [],
     );

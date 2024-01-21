@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../../../../core/theming/assets.dart';
 import '../../../../core/theming/styles.dart';
+import '../../../../generated/l10n.dart';
 class ImageAndDescriptionText extends StatelessWidget {
   const ImageAndDescriptionText({super.key});
 
@@ -12,7 +13,7 @@ class ImageAndDescriptionText extends StatelessWidget {
       children: [
         Image.asset(AssetsImages.splashImage),
         verticalSpacing(30),
-        Text('Let\'s find the "A" with us',textAlign: TextAlign.center,
+        Text(S.of(context).description_text_in_image_on_boarding_screen,textAlign: TextAlign.center,
           style: TextStyles.font24BlueBold,
         ),
         verticalSpacing(20)
