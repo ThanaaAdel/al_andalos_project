@@ -1,3 +1,4 @@
+import 'package:doc_doc_app/generated/l10n.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/helper/app_regex.dart';
@@ -36,7 +37,7 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
         child: Column(
           children: [
             AppTextFormField(
-              hintText: "Email",
+              hintText: S.of(context).email,
               validator: (value) {
                 if (value == null || value.isEmpty || !AppRex.isEmailValid(value)) {
                   return 'Please enter a valid email';
@@ -46,14 +47,14 @@ class _EmailAndPasswordState extends State<EmailAndPassword> {
             ),
             verticalSpacing(25),
             AppTextFormField(
-              hintText: "Password",
+              hintText: S.of(context).password,
               validator: (value) {
                 if (value == null || value.isEmpty ) {
                   return 'Please enter a valid Password';
                 }
               },
               controller:
-                  context.read<LoginCubit>().passwordController,
+              context.read<LoginCubit>().passwordController,
               obscureText: isObscureText,
               suffixIcon: GestureDetector(
                 onTap: () {

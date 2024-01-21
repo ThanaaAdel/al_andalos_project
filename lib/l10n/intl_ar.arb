@@ -1,5 +1,20 @@
 {
-    "students_name" : "اسماء الابناء",
-    "description_text_in_image_on_boarding_screen" : "'لنجد الحرف \"أ\" معنا'",
-    "text_in_onboarding_screen":"يرجى تسجيل الدخول لعرض التوصيات الشخصية \\n"
+    "students_name": "اسماء الابناء",
+    "description_text_in_image_on_boarding_screen": "لنجد الحرف 'A' معنا",
+    "text_in_onboarding_screen": "يرجى تسجيل الدخول لعرض التوصيات الشخصية",
+    "go_started_button": "ابدأ الآن",
+    "login_button": "تسجيل الدخول",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "terms_and_condition": "الشروط والأحكام",
+    "by_logging_you_agree": "من خلال تسجيل الدخول، أنت توافق علينا",
+    "and": "و",
+    "privacy_policy": "سياسة الخصوصية",
+    "positive_points": "النقاط الإيجابية",
+    "negative_points" : "النقاط السلبية",
+    "total_points": "مجموع النقاط",
+    "school_rank" : "ترتيب المدرسة",
+    "row_rank": "ترتيب الصف",
+    "room_rank": "ترتيب الغرفة",
+    "good_evening": "مساء الخير!"
 }

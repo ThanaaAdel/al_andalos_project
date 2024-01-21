@@ -22,10 +22,30 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "and": MessageLookupByLibrary.simpleMessage("و"),
+        "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
+            "من خلال تسجيل الدخول، أنت توافق علينا"),
         "description_text_in_image_on_boarding_screen":
-            MessageLookupByLibrary.simpleMessage("\'لنجد الحرف \"أ\" معنا\'"),
+            MessageLookupByLibrary.simpleMessage("لنجد الحرف \'A\' معنا"),
+        "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "go_started_button": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
+        "good_evening": MessageLookupByLibrary.simpleMessage("مساء الخير!"),
+        "login_button": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "negative_points":
+            MessageLookupByLibrary.simpleMessage("النقاط السلبية"),
+        "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "positive_points":
+            MessageLookupByLibrary.simpleMessage("النقاط الإيجابية"),
+        "privacy_policy":
+            MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+        "room_rank": MessageLookupByLibrary.simpleMessage("ترتيب الغرفة"),
+        "row_rank": MessageLookupByLibrary.simpleMessage("ترتيب الصف"),
+        "school_rank": MessageLookupByLibrary.simpleMessage("ترتيب المدرسة"),
         "students_name": MessageLookupByLibrary.simpleMessage("اسماء الابناء"),
+        "terms_and_condition":
+            MessageLookupByLibrary.simpleMessage("الشروط والأحكام"),
         "text_in_onboarding_screen": MessageLookupByLibrary.simpleMessage(
-            "يرجى تسجيل الدخول لعرض التوصيات الشخصية \\n")
+            "يرجى تسجيل الدخول لعرض التوصيات الشخصية"),
+        "total_points": MessageLookupByLibrary.simpleMessage("مجموع النقاط")
       };
 }

@@ -60,10 +60,10 @@ class S {
     );
   }
 
-  /// `'Let\'s find the "A" with us'`
+  /// `Let's find the "A" with us`
   String get description_text_in_image_on_boarding_screen {
     return Intl.message(
-      '\'Let\\\'s find the "A" with us\'',
+      'Let\'s find the "A" with us',
       name: 'description_text_in_image_on_boarding_screen',
       desc: '',
       args: [],
@@ -73,8 +73,158 @@ class S {
   /// `Please Sign in to view personalized \n recommendations`
   String get text_in_onboarding_screen {
     return Intl.message(
-      'Please Sign in to view personalized \\n recommendations',
+      'Please Sign in to view personalized \n recommendations',
       name: 'text_in_onboarding_screen',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Get Started`
+  String get go_started_button {
+    return Intl.message(
+      'Get Started',
+      name: 'go_started_button',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Login`
+  String get login_button {
+    return Intl.message(
+      'Login',
+      name: 'login_button',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message(
+      'Email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message(
+      'Password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Terms & Condition`
+  String get terms_and_condition {
+    return Intl.message(
+      'Terms & Condition',
+      name: 'terms_and_condition',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `By Logging , You Agree to Us`
+  String get by_logging_you_agree {
+    return Intl.message(
+      'By Logging , You Agree to Us',
+      name: 'by_logging_you_agree',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `And`
+  String get and {
+    return Intl.message(
+      'And',
+      name: 'and',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Privacy Policy`
+  String get privacy_policy {
+    return Intl.message(
+      'Privacy Policy',
+      name: 'privacy_policy',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Positive Points`
+  String get positive_points {
+    return Intl.message(
+      'Positive Points',
+      name: 'positive_points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Negative Points`
+  String get negative_points {
+    return Intl.message(
+      'Negative Points',
+      name: 'negative_points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Points`
+  String get total_points {
+    return Intl.message(
+      'Total Points',
+      name: 'total_points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `School Rank`
+  String get school_rank {
+    return Intl.message(
+      'School Rank',
+      name: 'school_rank',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Row Rank`
+  String get row_rank {
+    return Intl.message(
+      'Row Rank',
+      name: 'row_rank',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Room Rank`
+  String get room_rank {
+    return Intl.message(
+      'Room Rank',
+      name: 'room_rank',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Good Evening!`
+  String get good_evening {
+    return Intl.message(
+      'Good Evening!',
+      name: 'good_evening',
       desc: '',
       args: [],
     );

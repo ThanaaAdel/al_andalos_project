@@ -22,12 +22,33 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "and": MessageLookupByLibrary.simpleMessage("And"),
+        "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
+            "By Logging , You Agree to Us"),
         "description_text_in_image_on_boarding_screen":
             MessageLookupByLibrary.simpleMessage(
-                "\'Let\\\'s find the \"A\" with us\'"),
+                "Let\'s find the \"A\" with us"),
+        "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "go_started_button":
+            MessageLookupByLibrary.simpleMessage("Get Started"),
+        "good_evening": MessageLookupByLibrary.simpleMessage("Good Evening!"),
+        "login_button": MessageLookupByLibrary.simpleMessage("Login"),
+        "negative_points":
+            MessageLookupByLibrary.simpleMessage("Negative Points"),
+        "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "positive_points":
+            MessageLookupByLibrary.simpleMessage("Positive Points"),
+        "privacy_policy":
+            MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "room_rank": MessageLookupByLibrary.simpleMessage("Room Rank"),
+        "row_rank": MessageLookupByLibrary.simpleMessage("Row Rank"),
+        "school_rank": MessageLookupByLibrary.simpleMessage("School Rank"),
         "students_name":
             MessageLookupByLibrary.simpleMessage("The Name of Students"),
+        "terms_and_condition":
+            MessageLookupByLibrary.simpleMessage("Terms & Condition"),
         "text_in_onboarding_screen": MessageLookupByLibrary.simpleMessage(
-            "Please Sign in to view personalized \\n recommendations")
+            "Please Sign in to view personalized \n recommendations"),
+        "total_points": MessageLookupByLibrary.simpleMessage("Total Points")
       };
 }
