@@ -16,5 +16,12 @@
    "school_rank" : "School Rank",
    "row_rank": "Row Rank",
    "room_rank": "Room Rank",
-   "good_evening": "Good Evening!"
+   "good_evening": "Good Evening!",
+   "child_profile": "Child Profile",
+   "review": "Review",
+   "exams": "Exams",
+   "absence": "Absence",
+   "student_degrees": "Student Degrees",
+   "messages": "Messages"
+
 }

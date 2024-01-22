@@ -1,5 +1,5 @@
 {
-    "students_name": "اسماء الابناء",
+    "students_name": "اسم الطالب",
     "description_text_in_image_on_boarding_screen": "لنجد الحرف 'A' معنا",
     "text_in_onboarding_screen": "يرجى تسجيل الدخول لعرض التوصيات الشخصية",
     "go_started_button": "ابدأ الآن",
@@ -16,5 +16,11 @@
     "school_rank" : "ترتيب المدرسة",
     "row_rank": "ترتيب الصف",
     "room_rank": "ترتيب الغرفة",
-    "good_evening": "مساء الخير!"
+    "good_evening": "مساء الخير!",
+    "child_profile": "ملف الطفل",
+    "review": "تحفيز",
+    "exams": "الامتحانات",
+    "absence": "الغياب",
+    "student_degrees": "درجات الطالب",
+    "messages": "الرسائل"
 }

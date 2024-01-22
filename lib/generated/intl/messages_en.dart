@@ -22,17 +22,21 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "absence": MessageLookupByLibrary.simpleMessage("Absence"),
         "and": MessageLookupByLibrary.simpleMessage("And"),
         "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
             "By Logging , You Agree to Us"),
+        "child_profile": MessageLookupByLibrary.simpleMessage("Child Profile"),
         "description_text_in_image_on_boarding_screen":
             MessageLookupByLibrary.simpleMessage(
                 "Let\'s find the \"A\" with us"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "exams": MessageLookupByLibrary.simpleMessage("Exams"),
         "go_started_button":
             MessageLookupByLibrary.simpleMessage("Get Started"),
         "good_evening": MessageLookupByLibrary.simpleMessage("Good Evening!"),
         "login_button": MessageLookupByLibrary.simpleMessage("Login"),
+        "messages": MessageLookupByLibrary.simpleMessage("Messages"),
         "negative_points":
             MessageLookupByLibrary.simpleMessage("Negative Points"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
@@ -40,9 +44,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("Positive Points"),
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage("Privacy Policy"),
+        "review": MessageLookupByLibrary.simpleMessage("Review"),
         "room_rank": MessageLookupByLibrary.simpleMessage("Room Rank"),
         "row_rank": MessageLookupByLibrary.simpleMessage("Row Rank"),
         "school_rank": MessageLookupByLibrary.simpleMessage("School Rank"),
+        "student_degrees":
+            MessageLookupByLibrary.simpleMessage("Student Degrees"),
         "students_name":
             MessageLookupByLibrary.simpleMessage("The Name of Students"),
         "terms_and_condition":

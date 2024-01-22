@@ -7,6 +7,7 @@ import '../../../../../core/shared_widgets/app_elevated_button.dart';
 import '../../../../../core/theming/assets.dart';
 import '../../../../../core/theming/spacing.dart';
 import '../../../../../core/theming/styles.dart';
+import '../../../../../generated/l10n.dart';
 import '../../logic/login_cubit.dart';
 import '../widgets/email_and_password.dart';
 import '../widgets/login_bloc_listener.dart';
@@ -40,12 +41,12 @@ class _LoginScreenState extends State<LoginScreen> {
                   const EmailAndPassword(),
                   verticalSpacing(100),
                   AppTextButton(
-                      textStyle: TextStyles.font16WithSemiBold,
+                      textStyle: TextStyles.font16WithMedium,
                       onPressed: () {
                         validateThenDoLogin(context);
 
                       },
-                      textButton: 'Login'),
+                      textButton: S.of(context).login_button),
                   verticalSpacing(20),
                   const TermAndConditionText(),
                   verticalSpacing(70),

@@ -1,3 +1,4 @@
+import 'package:doc_doc_app/features/child_profile/presentaion/child_profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../features/auth/login_screen/data/models/api_parent_response_login.dart';
@@ -14,6 +15,11 @@ class AppRouter {
       case Routes.onBoardingScreen:
         return MaterialPageRoute(
           builder: (context) => const OnBoardingScreen(),
+        );
+      case Routes.childProfile:
+        final nameStudent = settings.arguments as String;
+        return MaterialPageRoute(
+          builder: (context) =>  ChildProfileScreen(nameStudent: nameStudent),
         );
       case Routes.homeScreen:
         final parentData = settings.arguments as ParentResponseBody;

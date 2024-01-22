@@ -22,15 +22,19 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "absence": MessageLookupByLibrary.simpleMessage("الغياب"),
         "and": MessageLookupByLibrary.simpleMessage("و"),
         "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
             "من خلال تسجيل الدخول، أنت توافق علينا"),
+        "child_profile": MessageLookupByLibrary.simpleMessage("ملف الطفل"),
         "description_text_in_image_on_boarding_screen":
             MessageLookupByLibrary.simpleMessage("لنجد الحرف \'A\' معنا"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "exams": MessageLookupByLibrary.simpleMessage("الامتحانات"),
         "go_started_button": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "good_evening": MessageLookupByLibrary.simpleMessage("مساء الخير!"),
         "login_button": MessageLookupByLibrary.simpleMessage("تسجيل الدخول"),
+        "messages": MessageLookupByLibrary.simpleMessage("الرسائل"),
         "negative_points":
             MessageLookupByLibrary.simpleMessage("النقاط السلبية"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
@@ -38,10 +42,12 @@ class MessageLookup extends MessageLookupByLibrary {
             MessageLookupByLibrary.simpleMessage("النقاط الإيجابية"),
         "privacy_policy":
             MessageLookupByLibrary.simpleMessage("سياسة الخصوصية"),
+        "review": MessageLookupByLibrary.simpleMessage("تحفيز"),
         "room_rank": MessageLookupByLibrary.simpleMessage("ترتيب الغرفة"),
         "row_rank": MessageLookupByLibrary.simpleMessage("ترتيب الصف"),
         "school_rank": MessageLookupByLibrary.simpleMessage("ترتيب المدرسة"),
-        "students_name": MessageLookupByLibrary.simpleMessage("اسماء الابناء"),
+        "student_degrees": MessageLookupByLibrary.simpleMessage("درجات الطالب"),
+        "students_name": MessageLookupByLibrary.simpleMessage("اسم الطالب"),
         "terms_and_condition":
             MessageLookupByLibrary.simpleMessage("الشروط والأحكام"),
         "text_in_onboarding_screen": MessageLookupByLibrary.simpleMessage(
