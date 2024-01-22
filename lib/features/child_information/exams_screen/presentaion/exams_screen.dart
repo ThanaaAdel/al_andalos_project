@@ -7,14 +7,14 @@ import '../../../../core/theming/spacing.dart';
 import '../../../../core/theming/styles.dart';
 import '../../../../generated/l10n.dart';
 
-class ReviewScreen extends StatefulWidget {
-  const ReviewScreen({super.key});
+class ExamsScreen extends StatefulWidget {
+  const ExamsScreen({super.key});
 
   @override
-  State<ReviewScreen> createState() => _ReviewScreenState();
+  State<ExamsScreen> createState() => _ExamsScreenState();
 }
 
-class _ReviewScreenState extends State<ReviewScreen> {
+class _ExamsScreenState extends State<ExamsScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -55,7 +55,7 @@ class _ReviewScreenState extends State<ReviewScreen> {
       crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Text(
-          S.of(context).review,
+          S.of(context).exams,
           style: TextStyles.font25DarkGraySemiBold,
         ),
 
@@ -86,21 +86,14 @@ class _ReviewScreenState extends State<ReviewScreen> {
                   style: TextStyles.font14DarkGraySemiBold,
                 ),
                 verticalSpacing(5),
-                dataInformationFromStudentAndResult(S.of(context).student_status , "positive"),
-                verticalSpacing(1),
-                dataInformationFromStudentAndResult(S.of(context).points ,"5"),
-                verticalSpacing(1),
-                dataInformationFromStudentAndResult(S.of(context).balance ,"5"),
-                verticalSpacing(1),
-                dataInformationFromStudentAndResult( S.of(context).total_balance ,"5"),
-                verticalSpacing(1),
-                dataInformationFromStudentAndResult(S.of(context).room_rank ,"5"),
-                verticalSpacing(1),
-                dataInformationFromStudentAndResult(S.of(context).english ,"english"),
+                dataInformationFromStudentAndResult(S.of(context).subject_student , "english"),
                 verticalSpacing(1),
                 dataInformationFromStudentAndResult(S.of(context).teacher_name ,"ahmed"),
                 verticalSpacing(1),
-                dataInformationFromStudentAndResult(S.of(context).date ,"5 / 1 / 2020"),
+                dataInformationFromStudentAndResult(S.of(context).total_points ,"100"),
+                verticalSpacing(1),
+                dataInformationFromStudentAndResult( S.of(context).student_degree ,"100"),
+
               ],
             ),
           ),

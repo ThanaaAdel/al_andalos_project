@@ -22,5 +22,15 @@
     "exams": "الامتحانات",
     "absence": "الغياب",
     "student_degrees": "درجات الطالب",
-    "messages": "الرسائل"
+    "messages": "الرسائل",
+    "student_status": "حالة الطالب",
+    "points": "النقاط",
+    "balance": " رصد العقوبات اصبح",
+    "total_balance": "الرصيد الاجمالي",
+    "english": "اللغة الانجليزية",
+    "teacher_name": "اسم مدرس المادة",
+    "date": "التاريخ",
+    "subject_student": "اسم المدرس",
+    "total_degree": "مجموع الدرجات",
+    "student_degree": "درجة الطالب"
 }

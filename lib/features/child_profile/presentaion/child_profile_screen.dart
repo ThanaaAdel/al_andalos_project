@@ -1,4 +1,5 @@
 
+import 'package:doc_doc_app/core/helper/extentions.dart';
 import 'package:doc_doc_app/core/theming/media_query_helper.dart';
 import 'package:doc_doc_app/core/theming/styles.dart';
 import 'package:flutter/material.dart';
@@ -106,7 +107,7 @@ class _ChildProfileScreenState extends State<ChildProfileScreen> {
             children: [
               GestureDetector(
                 onTap: () {
-
+context.pushNamed('/reviewScreen');
                 },
                 child: ContantCardChild(
                   text: S.of(context).review,
@@ -118,7 +119,7 @@ class _ChildProfileScreenState extends State<ChildProfileScreen> {
               ),
               GestureDetector(
                 onTap: () {
-
+                  context.pushNamed('/examScreen');
                 },
                 child: ContantCardChild(
                   text: S.of(context).exams,

@@ -22,6 +22,16 @@
    "exams": "Exams",
    "absence": "Absence",
    "student_degrees": "Student Degrees",
-   "messages": "Messages"
+   "messages": "Messages",
+   "student_status": "Student Status",
+   "points": "Points",
+   "balance": "Balance",
+   "total_balance": "Total Balance",
+   "english": "English",
+   "teacher_name": "Teacher Name",
+   "date": "Date",
+   "subject_student": "Subject Student",
+   "total_degree": "Total Degree",
+   "student_degree": "Student Degree"
 
 }

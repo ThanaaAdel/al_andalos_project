@@ -24,12 +24,15 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "absence": MessageLookupByLibrary.simpleMessage("الغياب"),
         "and": MessageLookupByLibrary.simpleMessage("و"),
+        "balance": MessageLookupByLibrary.simpleMessage(" رصد العقوبات اصبح"),
         "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
             "من خلال تسجيل الدخول، أنت توافق علينا"),
         "child_profile": MessageLookupByLibrary.simpleMessage("ملف الطفل"),
+        "date": MessageLookupByLibrary.simpleMessage("التاريخ"),
         "description_text_in_image_on_boarding_screen":
             MessageLookupByLibrary.simpleMessage("لنجد الحرف \'A\' معنا"),
         "email": MessageLookupByLibrary.simpleMessage("البريد الإلكتروني"),
+        "english": MessageLookupByLibrary.simpleMessage("اللغة الانجليزية"),
         "exams": MessageLookupByLibrary.simpleMessage("الامتحانات"),
         "go_started_button": MessageLookupByLibrary.simpleMessage("ابدأ الآن"),
         "good_evening": MessageLookupByLibrary.simpleMessage("مساء الخير!"),
@@ -38,6 +41,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "negative_points":
             MessageLookupByLibrary.simpleMessage("النقاط السلبية"),
         "password": MessageLookupByLibrary.simpleMessage("كلمة المرور"),
+        "points": MessageLookupByLibrary.simpleMessage("النقاط"),
         "positive_points":
             MessageLookupByLibrary.simpleMessage("النقاط الإيجابية"),
         "privacy_policy":
@@ -46,12 +50,19 @@ class MessageLookup extends MessageLookupByLibrary {
         "room_rank": MessageLookupByLibrary.simpleMessage("ترتيب الغرفة"),
         "row_rank": MessageLookupByLibrary.simpleMessage("ترتيب الصف"),
         "school_rank": MessageLookupByLibrary.simpleMessage("ترتيب المدرسة"),
+        "student_degree": MessageLookupByLibrary.simpleMessage("درجة الطالب"),
         "student_degrees": MessageLookupByLibrary.simpleMessage("درجات الطالب"),
+        "student_status": MessageLookupByLibrary.simpleMessage("حالة الطالب"),
         "students_name": MessageLookupByLibrary.simpleMessage("اسم الطالب"),
+        "subject_student": MessageLookupByLibrary.simpleMessage("اسم المدرس"),
+        "teacher_name": MessageLookupByLibrary.simpleMessage("اسم مدرس المادة"),
         "terms_and_condition":
             MessageLookupByLibrary.simpleMessage("الشروط والأحكام"),
         "text_in_onboarding_screen": MessageLookupByLibrary.simpleMessage(
             "يرجى تسجيل الدخول لعرض التوصيات الشخصية"),
+        "total_balance":
+            MessageLookupByLibrary.simpleMessage("الرصيد الاجمالي"),
+        "total_degree": MessageLookupByLibrary.simpleMessage("مجموع الدرجات"),
         "total_points": MessageLookupByLibrary.simpleMessage("مجموع النقاط")
       };
 }

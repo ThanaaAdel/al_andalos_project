@@ -24,13 +24,16 @@ class MessageLookup extends MessageLookupByLibrary {
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
         "absence": MessageLookupByLibrary.simpleMessage("Absence"),
         "and": MessageLookupByLibrary.simpleMessage("And"),
+        "balance": MessageLookupByLibrary.simpleMessage("Balance"),
         "by_logging_you_agree": MessageLookupByLibrary.simpleMessage(
             "By Logging , You Agree to Us"),
         "child_profile": MessageLookupByLibrary.simpleMessage("Child Profile"),
+        "date": MessageLookupByLibrary.simpleMessage("Date"),
         "description_text_in_image_on_boarding_screen":
             MessageLookupByLibrary.simpleMessage(
                 "Let\'s find the \"A\" with us"),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
+        "english": MessageLookupByLibrary.simpleMessage("English"),
         "exams": MessageLookupByLibrary.simpleMessage("Exams"),
         "go_started_button":
             MessageLookupByLibrary.simpleMessage("Get Started"),
@@ -40,6 +43,7 @@ class MessageLookup extends MessageLookupByLibrary {
         "negative_points":
             MessageLookupByLibrary.simpleMessage("Negative Points"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
+        "points": MessageLookupByLibrary.simpleMessage("Points"),
         "positive_points":
             MessageLookupByLibrary.simpleMessage("Positive Points"),
         "privacy_policy":
@@ -48,14 +52,23 @@ class MessageLookup extends MessageLookupByLibrary {
         "room_rank": MessageLookupByLibrary.simpleMessage("Room Rank"),
         "row_rank": MessageLookupByLibrary.simpleMessage("Row Rank"),
         "school_rank": MessageLookupByLibrary.simpleMessage("School Rank"),
+        "student_degree":
+            MessageLookupByLibrary.simpleMessage("Student Degree"),
         "student_degrees":
             MessageLookupByLibrary.simpleMessage("Student Degrees"),
+        "student_status":
+            MessageLookupByLibrary.simpleMessage("Student Status"),
         "students_name":
             MessageLookupByLibrary.simpleMessage("The Name of Students"),
+        "subject_student":
+            MessageLookupByLibrary.simpleMessage("Subject Student"),
+        "teacher_name": MessageLookupByLibrary.simpleMessage("Teacher Name"),
         "terms_and_condition":
             MessageLookupByLibrary.simpleMessage("Terms & Condition"),
         "text_in_onboarding_screen": MessageLookupByLibrary.simpleMessage(
             "Please Sign in to view personalized \n recommendations"),
+        "total_balance": MessageLookupByLibrary.simpleMessage("Total Balance"),
+        "total_degree": MessageLookupByLibrary.simpleMessage("Total Degree"),
         "total_points": MessageLookupByLibrary.simpleMessage("Total Points")
       };
 }

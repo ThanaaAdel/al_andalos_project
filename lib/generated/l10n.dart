@@ -289,6 +289,106 @@ class S {
       args: [],
     );
   }
+
+  /// `Student Status`
+  String get student_status {
+    return Intl.message(
+      'Student Status',
+      name: 'student_status',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Points`
+  String get points {
+    return Intl.message(
+      'Points',
+      name: 'points',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Balance`
+  String get balance {
+    return Intl.message(
+      'Balance',
+      name: 'balance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Balance`
+  String get total_balance {
+    return Intl.message(
+      'Total Balance',
+      name: 'total_balance',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `English`
+  String get english {
+    return Intl.message(
+      'English',
+      name: 'english',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Teacher Name`
+  String get teacher_name {
+    return Intl.message(
+      'Teacher Name',
+      name: 'teacher_name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Date`
+  String get date {
+    return Intl.message(
+      'Date',
+      name: 'date',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Subject Student`
+  String get subject_student {
+    return Intl.message(
+      'Subject Student',
+      name: 'subject_student',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Total Degree`
+  String get total_degree {
+    return Intl.message(
+      'Total Degree',
+      name: 'total_degree',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Student Degree`
+  String get student_degree {
+    return Intl.message(
+      'Student Degree',
+      name: 'student_degree',
+      desc: '',
+      args: [],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {
